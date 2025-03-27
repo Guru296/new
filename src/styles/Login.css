@@ -1,0 +1,115 @@
+/* Centering login box */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f8f9fa;
+  }
+  
+  /* Login box */
+  .login-box {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+  }
+  
+  /* Logo */
+  .logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ff6b3d;
+  }
+  
+  .logo span {
+    color: #222;
+  }
+  
+  /* Input groups */
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 10px 0;
+    transition: 0.3s;
+  }
+  
+  /* Error animations */
+  .input-group.error input {
+    border: 2px solid red;
+    animation: shake 0.3s ease-in-out;
+  }
+  
+  @keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+  }
+  
+  .input-group label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .input-group input {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  /* Password Field */
+  .password-group .password-field {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .password-field input {
+    width: 100%;
+    padding-right: 40px;
+  }
+  
+  .password-field span {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    color: #666;
+  }
+  
+  /* Login Button */
+  .login-btn {
+    background: #ff6b3d;
+    color: white;
+    font-size: 16px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.3s;
+  }
+  
+  .login-btn:hover {
+    background: #e65a2f;
+  }
+  
+  /* Forgot Password */
+  .forgot-password {
+    display: block;
+    margin-top: 15px;
+    font-size: 14px;
+    color: blue;
+    text-decoration: none;
+  }
+  
+  .forgot-password:hover {
+    text-decoration: underline;
+  }
+  
